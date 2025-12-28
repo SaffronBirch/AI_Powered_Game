@@ -1,0 +1,15 @@
+# requirements file
+# sandbox had python 3.10
+
+openai
+ollama
+python-dotenv~=1.0.1
+pydantic==2.8.2
+gradio==4.44.1
+torch==2.1.0
+torchtext==0.16.0
+pandas
+scikit-learn
+tqdm 
+matplotlib
+
