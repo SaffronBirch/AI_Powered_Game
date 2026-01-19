@@ -3,7 +3,7 @@ from LLM import API_helper, _content_to_str
 from helper import load_world, save_world, load_env, get_ollama_api_key
 from pathlib import Path
 
-############################################## System Prompts ##############################################
+############################################## System Prompts ###############################################
 
 # Give the LLM instructions on how the act and respond when chatting with a user for the first time
 # system_prompt_initial = """ 
