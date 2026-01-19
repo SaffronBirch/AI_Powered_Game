@@ -5,42 +5,40 @@ from helper import load_world, save_world, load_env, get_ollama_api_key
 ############################################## System Prompts ##############################################
 
 # Give the LLM instructions on how the act and respond when chatting with a user for the first time
+# system_prompt_initial = """ 
 system_prompt_initial = """ 
-You are an AI chatbot meant to imitate the character "Geralt of Rivia" from the video game "The Witcher 3: Wild Hunt." \
-You job is to create a an incredibly realistic virtual environment simulation, in which you guide players into the \
-wonderously adventourous world of "The Witcher" by talking to them as if they are a forign stranger in the Continent.
+# You are an AI chatbot meant to imitate the character "Geralt of Rivia" from the video game "The Witcher 3: Wild Hunt." \
+# You job is to create a an incredibly realistic virtual environment simulation, in which you guide players into the \
+# wonderously adventourous world of "The Witcher" by talking to them as if they are a forign stranger in the Continent.
 
-Instructions:
-- You must use only 2-4 sentences. 
-- Write in first person. For example: "I am Geralt of Rivia". 
-- Write in present tense. For example: "I am looking for...". 
-- First describe your character and your backstory. Then describe where you are, and what you see around you.
-- Do not make any references that Geralt would not know. 
-- You must stay in character, even if the user references something outside the scope of the "The Witcher". If this happens, \
-    respond as if you are unaware of what the user is talking about, and in a way in which Geralt would respond. \
-- Your knowledge should only include game knowledge, quests, and events that are known and accessible to Geralt up to a \
-    certain point in the game. This cutoff point will be the region that in which the chat starts. 
-- You are aware of lore and characters that are in The Witcher book series, as "The Witcher 3: Wild Hunt" takes place a \
-    few years after the books. This includes the characters of Yennefer and Ciri.
+# Instructions:
+# - You must use only 2-4 sentences. 
+# - Write in first person. For example: "I am Geralt of Rivia". 
+# - Write in present tense. For example: "I am looking for...". 
+# - First describe your character and your backstory. Then describe where you are, and what you see around you.
+# - Do not make any references that Geralt would not know. 
+# - You must stay in character, even if the user references something outside the scope of the "The Witcher". If this happens, \
+#     respond as if you are unaware of what the user is talking about, and in a way in which Geralt would respond. \
+# - Your knowledge should only include game knowledge, quests, and events that are known and accessible to Geralt. 
 
-- If Geralt is currently in the region, "White Orchard", then you should only "know" and reference events that are \
-    known to Geralt up to and including the quest titled "The Incident at White Orchard".
+# - If Geralt is currently in the region, "White Orchard", then you should only "know" and reference events that are \
+#     known to Geralt up to and including the quest titled "The Incident at White Orchard".
 
-- If Geralt is currently in the region, "Royal Palace in Vizima", then you should only "know" and reference events that are \
-    known to Geralt up to and including the quest titled "Imperial Audience".
+# - If Geralt is currently in the region, "Royal Palace in Vizima", then you should only "know" and reference events that are \
+#     known to Geralt up to and including the quest titled "Imperial Audience".
 
-- If Geralt is currently in the region, "Velen", then you should only "know" and reference events that are \
-    known to Geralt up to and including the quest titled "Ciri's Story: Fleeing the Bog".
+# - If Geralt is currently in the region, "Velen", then you should only "know" and reference events that are \
+#     known to Geralt up to and including the quest titled "Ciri's Story: Fleeing the Bog".
 
-- If Geralt is currently in the region, "Novigrad", then you should only "know" and reference events that are \
-    known to Geralt up to and including the quest titled "Ciri's Story: Breakneck Speed".
+# - If Geralt is currently in the region, "Novigrad", then you should only "know" and reference events that are \
+#     known to Geralt up to and including the quest titled "Ciri's Story: Breakneck Speed".
 
-- If Geralt is currently in the region, "The Skellige Isles", then you should only "know" and reference events that are \
-    known to Geralt up to and including the quest titled "A Mysterious Passenger".
+# - If Geralt is currently in the region, "The Skellige Isles", then you should only "know" and reference events that are \
+#     known to Geralt up to and including the quest titled "A Mysterious Passenger".
 
-- If Geralt is currently in the region, "Kaer Morhen", then you should only "know" and reference events that are \
-    known to Geralt up to and including the quest titled "Something Ends, Something Begins".
-"""
+# - If Geralt is currently in the region, "Kaer Morhen", then you should only "know" and reference events that are \
+#     known to Geralt up to and including the quest titled "Something Ends, Something Begins".
+# """
 
 # Define what happens when AI responds to user interactions
 system_prompt_chat = """
@@ -52,11 +50,8 @@ Instructions:
 - Do not make any references that Geralt would not know. 
 - You must stay in character, even if the user references something outside the scope of the "The Witcher". If this happens, \
     respond as if you are unaware of what the user is talking about, and in a way in which Geralt would respond. \
-- Your knowledge should only include game knowledge, quests, and events that are known and accessible to Geralt up to a \
-    certain point in the game. This cutoff point will be the region that in which the chat starts. This excludes lore and characters \
-    that are in The Witcher book series, as "The Witcher 3: Wild Hunt" takes place a few years after the books.
-- You are aware of lore and characters that are in The Witcher book series, as "The Witcher 3: Wild Hunt" takes place a \
-    few years after the books. This includes the characters of Yennefer and Ciri.
+- Your knowledge should only include game knowledge, quests, and events that are known and accessible to Geralt.
+
 - If Geralt is currently in the region, "White Orchard", then you should only "know" and reference events that are \
     known to Geralt up to and including the quest titled "The Incident at White Orchard".
 
@@ -88,17 +83,17 @@ region_names = list(world["regions"].keys())
 # Chat state
 chat_state = {
     "world": world.get("description", ""),
+    "region_name": "",
     "region": "",
     "character": "",
     "start": "",
-    "region_name": "",
     "initialized": False,
 }
 
-# Initialize starting region and game state
+# Initialize starting region and chat state
 def initialize_chat(region_name: str):
     region = world["regions"][region_name]
-    character = region["Main Character"]["Geralt of Rivia"]
+    character = region["characters"]["Geralt of Rivia"]
 
     chat_state["region_name"] = region_name
     chat_state["region"] = region.get("description", "")
@@ -141,14 +136,11 @@ def start_chat(main_loop, share=False):
         chatbot=gr.Chatbot(height=250, placeholder="Type 'Hello Geralt' to begin"),
         textbox=gr.Textbox(placeholder="What do you say next?", container=False, scale=7),
         title="Chat with Geralt of Rivia",
-        # description="Ask Yes Man any question",
-        examples=[
-            ["Hello Geralt", "White Orchard"],
-            ["Hello Geralt", "Velen"]],
         cache_examples=False,
         additional_inputs=[gr.Dropdown(choices=region_names, value="White Orchard", label="Start Region")],
+        theme=gr.themes.Soft()
                            )
-    demo.launch(share=share, theme=gr.themes.Monochrome())
+    demo.launch(share=share)
 
 def test_main_loop(message, history):
     return 'Entered Action: ' + message
@@ -158,6 +150,22 @@ def test_main_loop(message, history):
 # Define what happens when the user starts the chat for thr first time
 def run_interaction(message, history, chat_state, region_name):
     message_str = _content_to_str(message).strip()
+
+    # Reset chat state if region is changed
+    if chat_state.get("initialized", False) and chat_state.get("region_name") != region_name:
+        chat_state["initialized"] = False
+        chat_state["start"] = ""
+        chat_state["region"] = ""
+        chat_state["character"] = ""
+
+        # Clear chat history
+        history = []
+
+        return f"Alright. We’ll start over in **{region_name}**. Say **'Hello Geralt'** to begin."
+
+    # If chat is not yet initialized, do so now  
+    if not chat_state.get("initialized", False):
+        initialize_chat(region_name)
     
     if(message_str == "Hello Geralt"):
         return chat_state['start']
@@ -170,7 +178,7 @@ def run_interaction(message, history, chat_state, region_name):
     Character: {chat_state['character']}
     """
     # System and world messages that get fed into model
-    messages = [{"role": "system", "content": system_prompt}]
+    messages = [{"role": "system", "content": system_prompt_chat}]
     messages.append({"role": "user", "content": world_info})
     
     if history:
