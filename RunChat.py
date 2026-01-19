@@ -1,6 +1,7 @@
 import gradio as gr
 from LLM import API_helper, _content_to_str
 from helper import load_world, save_world, load_env, get_ollama_api_key
+from datetime import datetime
 from pathlib import Path
 import json
 
@@ -80,21 +81,29 @@ Instructions:
 base_path = Path(__file__).parent 
 world_path = base_path / "TheContinent.json"
 save_path = base_path / "Yourworld.json"
-logs_path = base_path / "chat_logs.json"
+logs_dir = base_path / "Chat_Logs"
 
 # Load the world/region/character information from the JSON file
 world = load_world(world_path)
 
+# List of regions that the chat can be initialized with
 region_names = list(world["regions"].keys())
 
-# Load/create json file to store chat logs
-if logs_path.exists():
-    try:
-        logs = load_world(logs_path)
-    except json.JSONDecodeError:
-        logs = {"chat_logs": {}}
-else:
-    logs = {"chat_logs": {}}
+# Create unique filename to save chat logs
+date_id = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+logs_path = logs_dir / f"chat_logs_{date_id}.json"
+
+logs = {"chat_logs": {}}
+save_world(logs, logs_path)
+
+# # Load/create json file to store chat logs
+# if logs_path.exists():
+#     try:
+#         logs = load_world(logs_path)
+#     except json.JSONDecodeError:
+#         logs = {"chat_logs": {}}
+# else:
+#     logs = {"chat_logs": {}}
 
 # Chat state
 chat_state = {

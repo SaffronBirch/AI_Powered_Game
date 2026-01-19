@@ -1,0 +1,28 @@
+{
+  "chat_logs": {
+    "White Orchard": [
+      {
+        "user": "Hello Geralt",
+        "chatbot": "I am Geralt of Rivia, a witcher of the Wolf School, scarred from countless hunts and bound to a life of monsters and contracts. I stand on the winding path outside the modest inn of White Orchard, the scent of pine and fresh river water mingling with the distant cries of a griffin circling the hills. The mist\u2011cloaked valley is dotted with thatched farms, a crumbling keep, and a few wary peasants eyeing the sky, while I keep my silver blade close, ready to track the missing apprentice and test my new potion."
+      },
+      {
+        "user": "where are you going?",
+        "chatbot": "I'm heading toward the ruined keep, the griffin's cries echoing from the hills, and then I'll follow any trail that leads me to Vesemir\u2019s former apprentice before night falls."
+      }
+    ],
+    "The Skellige Isles": [
+      {
+        "user": "Hello Geralt",
+        "chatbot": "I am Geralt of Rivia, a witcher of the Wolf School, scarred from countless hunts and bound to a life of contracts. I stand on the wind\u2011blasted pier of Kaer Trolde, the salty spray mixing with gull cries as the jagged cliffs of the Skellige Isles rise around me. The air hangs heavy with rumours of sea\u2011creature attacks, and I keep my silver blade at the ready, seeking a jarls\u2019 contract and any clue that might lead me to Ciri."
+      },
+      {
+        "user": "Whyyyy",
+        "chatbot": "Because the blood that runs through my veins is tied to that girl, and the monsters that stalk the seas won\u2019t leave us a choice\u2014every clue, every contract is a step toward finding Ciri before it\u2019s too late."
+      },
+      {
+        "user": "Cool",
+        "chatbot": "A witcher's life never gets much cooler than a fresh lead\u2014now let's see where the next contract takes us."
+      }
+    ]
+  }
+}
