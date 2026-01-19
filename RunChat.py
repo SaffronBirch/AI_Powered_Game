@@ -87,6 +87,7 @@ world = load_world(world_path)
 
 region_names = list(world["regions"].keys())
 
+# Load/create json file to store chat logs
 if logs_path.exists():
     try:
         logs = load_world(logs_path)
@@ -134,6 +135,7 @@ def initialize_chat(region_name: str):
     world["start"] = chat_state["start"]
     save_world(world, save_path)
 
+# Function to save chat logs to json file
 def save_chat(region_name, user_message, chatbot_message):
     if "chat_logs" not in logs:
         logs["chat_logs"] = {}
@@ -190,10 +192,11 @@ def run_interaction(message, history, chat_state, region_name):
 
         return f"Alright. We’ll start over in **{region_name}**. Say **'Hello Geralt'** to begin."
 
-    # If chat is not yet initialized, do so now  
+    # If chat is not yet initialized, do so now to initialize starting region
     if not chat_state.get("initialized", False):
         initialize_chat(region_name)
     
+    # Start chat, and save starting message to chat logs
     if(message_str == "Hello Geralt"):
         reply = chat_state['start']
     
