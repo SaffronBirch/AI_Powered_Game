@@ -167,6 +167,10 @@ for region in regions.values():    # Create Geralt's profile for White Orchard
 ############################################## Save to JSON ##############################################
 
 from helper import save_world
+from pathlib import Path
 
-save_world(world, '/mnt/c/Users/Saffron/Documents/Ontario Tech Class Notes/Thesis/AI_Powered_Game/TheContinent.json')
+base_path = Path(__file__).parent 
+save_path = base_path / "TheContinent.json"
+
+save_world(world, save_path)
 
