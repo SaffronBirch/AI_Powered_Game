@@ -1,5 +1,0 @@
-dim_emb: 32
-dim_state: 64
-lr: 0.001
-num_classes: 6
-vocab_size: 22770

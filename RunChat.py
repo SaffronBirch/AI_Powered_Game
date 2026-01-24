@@ -170,7 +170,7 @@ def start_chat(main_loop, share=False):
 
     demo = gr.ChatInterface(
         fn=main_loop,
-        chatbot=gr.Chatbot(height=500, placeholder="Type 'Hello Geralt' to begin"),
+        chatbot=gr.Chatbot(height=250, placeholder="Type 'Hello Geralt' to begin"),
         textbox=gr.Textbox(placeholder="What do you say next?", container=False, scale=7),
         title="Chat with Geralt of Rivia",
         cache_examples=False,

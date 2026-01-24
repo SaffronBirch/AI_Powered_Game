@@ -1,6 +1,5 @@
 # requirements file
 # sandbox had python 3.10
-
 openai
 ollama
 python-dotenv~=1.0.1
@@ -15,3 +14,10 @@ matplotlib
 lightning
 numpy==1.26.4
 huggingface_hub==0.20.3
+
+# Toxic Language Guardrail
+nltk
+transformers
+torch
+detoxify
+guardrails-ai>=0.4.0
