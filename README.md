@@ -27,7 +27,7 @@ AI guardrails can be implemented that act as a digital filter, ensuring user inp
 - Ollama
 - Guardrails AI
 
-## How to Run
+## How to Run (In Progress -- Please Check Back Soon)
 ### Create a virtual Environment:
 
 ### Download the required dependecies:
