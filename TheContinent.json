@@ -1,1 +1,78 @@
-{"name": "The Continent", "description": "The Continent is a vast, war\u2011torn land of fog\u2011shrouded forests, rolling plains, and crumbling cities. Magic and monsters linger in every corner, while humans, elves, dwarves, and other races vie for power. The Wild Hunt rides the skies, hunting Geralt of Rivia across a tapestry of political intrigue and ancient lore. Dark fairy tales and brutal reality blend, creating a world both beautiful and unforgiving.", "regions": {"White Orchard": {"name": "White Orchard", "description": "White Orchard is a small, forested valley on the edge of Temeria, known for its rolling hills and quiet streams. It is dotted with farms, a modest inn, and a ruined keep that serve as the starting point for many travelers. The area is populated by local peasants, itinerant merchants, and a few stray monsters such as wolves and drowners. A small garrison of Temerian soldiers occasionally patrols the roads.", "world": "The Continent", "characters": {"Geralt of Rivia": {"name": "Geralt of Rivia", "description": "He is a tall, scarred witcher with white hair and pale, cat\u2011like eyes. His skin bears the muted gray of countless monster battles, and his armor is a mix of leather and steel. He works as a monster slayer for hire, wielding two swords\u2014one steel, one silver. In White Orchard, he seeks the missing witcher Vesemir\u2019s former apprentice and hunts the griffin terrorising the village. His purpose is to investigate rumors of a hidden Cerys tower and to test a new potion for enhanced senses.", "region": "White Orchard"}}}, "Royal Palace in Vizima": {"name": "Royal Palace in Vizima", "description": "The Royal Palace sits in the heart of Vizima, the capital of Temeria, and dominates the city with its towering walls and grand courtyards. Inside, nobles, councilors, and the king's guard manage political affairs while scholars and mages maintain the library and alchemy labs. The surrounding market is filled with merchants, craftsmen, and street performers. Guarded by elite soldiers, the palace also houses imprisoned war criminals and a hidden network of spies.", "world": "The Continent", "characters": {"Geralt of Rivia": {"name": "Geralt of Rivia", "description": "Geralt stands tall in his worn, silver\u2011haired cloak, his pale skin and scarred visage marked by countless battles. He wears his signature twin swords at his hips, the steel glinting even in Vizima\u2019s dim corridors. As a witcher, he travels the land hunting monsters and negotiating political intrigue. He is in the Royal Palace to investigate rumors of a cursed noble and to protect the kingdom from a hidden threat.", "region": "Royal Palace in Vizima"}}}, "Velen": {"name": "Velen", "description": "Velen, also called the No Man's Land, is a scarred plain of swamps, ruined farms, and war\u2011torn villages under perpetual mist. Its people are mostly peasants, afflicted by famine and bandit raids, along with scattered soldiers from the Northern Kingdoms. The region is controlled by the ruthless warlord Stregobor's followers, the Crones of Crookback Bog, and the loosely organized Scoia\u2019tael rebels. Dangerous creatures like leshens, drowners, and wraiths roam the marshes, making travel hazardous.", "world": "The Continent", "characters": {"Geralt of Rivia": {"name": "Geralt of Rivia", "description": "Geralt is a tall, scarred witcher with white hair and amber eyes, his armor bears the Wolf School insignia. He is a professional monster hunter hired to track and slay dangerous creatures. He has traveled to Velen to investigate a surge of restless specters and a cursed village, seeking both a reward and clues about the Wild Hunt.", "region": "Velen"}}}, "Novigrad": {"name": "Novigrad", "description": "Novigrad is a bustling free port city built on the banks of the Pontar River, famed for its towering cathedral, vibrant bazaars, and dark alleys. Citizens include merchants, artisans, scholars, and a large population of refugees and outcasts. Powerful factions such as the Church of the Eternal Fire, the criminal syndicate of the Rats, and the secretive Lodge of Sorceresses vie for influence. The city is also home to guilds of mages, thieves, and a constant presence of street guards and hired mercenaries.", "world": "The Continent", "characters": {"Geralt of Rivia": {"name": "Geralt of Rivia", "description": "Geralt stands tall, his white hair pulled back, and his yellow eyes scan the city's alleys. He wears his familiar leather armor, a silver sword at his hip and a steel blade strapped to his back. As a witcher, he travels the streets hunting monsters and seeking contracts. In Novigrad he searches for information about Ciri and the mysterious Wild Hunt.", "region": "Novigrad"}}}, "The Skellige Isles": {"name": "The Skellige Isles", "description": "The Skellige Isles are a rugged archipelago of storm\u2011 battered cliffs, pine forests, and windswept villages that value strength and seafaring skill. Inhabitants are fierce islanders, clan chiefs, and seasoned sailors who follow ancient codes of honor. The major clans\u2014Hjalmar, Irden, and others\u2014compete for territory, while druids and skalds preserve old myths and rites. A strong navy of warships patrols the seas, and the local taverns echo with the tales of warriors and the songs of bards.", "world": "The Continent", "characters": {"Geralt of Rivia": {"name": "Geralt of Rivia", "description": "Geralt is a tall, white\u2011haired witcher with scarred skin and amber eyes. He wears weather\u2011worn leather armor and a silver sword at his hip. His profession is a monster hunter and a trained witcher of the School of the Wolf. He has come to the Skellige Isles to investigate a surge of sea\u2011creature attacks and to seek a contract from the local jarls. He also hopes to find clues about Ciri\u2019s whereabouts.", "region": "The Skellige Isles"}}}, "Kaer Morhen": {"name": "Kaer Morhen", "description": "Kaer Morhen is an ancient, snow\u2011capped keep high in the Blue Mountains, serving as the witchers' training ground and sanctuary. It is inhabited by a handful of surviving witchers, their mentors, and a few loyal caretakers. The walls protect hidden armories, alchemy labs, and a library of monster lore. Despite its isolation, occasional visitors like scholars, merchants, or desperate fugitives seek refuge within its stone halls.", "world": "The Continent", "characters": {"Geralt of Rivia": {"name": "Geralt of Rivia", "description": "Geralt stands tall with white hair tied back, a scarred face, and piercing yellow eyes. He is a witcher, a monster hunter trained at Kaer Morhen. He has returned to the fortress to recuperate, train new apprentices, and ready himself for the upcoming threats. His purpose is to gather intelligence on the Wild Hunt and forge alliances for the battles ahead.", "region": "Kaer Morhen"}}}}}
+{
+  "name": "The Continent",
+  "description": "The Continent is a vast, war\u2011torn land of fog\u2011shrouded forests, rolling plains, and crumbling cities. Magic and monsters linger in every corner, while humans, elves, dwarves, and other races vie for power. The Wild Hunt rides the skies, hunting Geralt of Rivia across a tapestry of political intrigue and ancient lore. Dark fairy tales and brutal reality blend, creating a world both beautiful and unforgiving.",
+  "regions": {
+    "White Orchard": {
+      "name": "White Orchard",
+      "description": "White Orchard is a small, forested valley on the edge of Temeria, known for its rolling hills and quiet streams. It is dotted with farms, a modest inn, and a ruined keep that serve as the starting point for many travelers. The area is populated by local peasants, itinerant merchants, and a few stray monsters such as wolves and drowners. A small garrison of Temerian soldiers occasionally patrols the roads.",
+      "world": "The Continent",
+      "characters": {
+        "Geralt of Rivia": {
+          "name": "Geralt of Rivia",
+          "description": "He is a tall, scarred witcher with white hair and pale, cat\u2011like eyes. His skin bears the muted gray of countless monster battles, and his armor is a mix of leather and steel. He works as a monster slayer for hire, wielding two swords\u2014one steel, one silver. In White Orchard, he seeks the missing witcher Vesemir\u2019s former apprentice and hunts the griffin terrorising the village. His purpose is to investigate rumors of a hidden Cerys tower and to test a new potion for enhanced senses.",
+          "region": "White Orchard"
+        }
+      }
+    },
+    "Royal Palace in Vizima": {
+      "name": "Royal Palace in Vizima",
+      "description": "The Royal Palace sits in the heart of Vizima, the capital of Temeria, and dominates the city with its towering walls and grand courtyards. Inside, nobles, councilors, and the king's guard manage political affairs while scholars and mages maintain the library and alchemy labs. The surrounding market is filled with merchants, craftsmen, and street performers. Guarded by elite soldiers, the palace also houses imprisoned war criminals and a hidden network of spies.",
+      "world": "The Continent",
+      "characters": {
+        "Geralt of Rivia": {
+          "name": "Geralt of Rivia",
+          "description": "Geralt stands tall in his worn, silver\u2011haired cloak, his pale skin and scarred visage marked by countless battles. He wears his signature twin swords at his hips, the steel glinting even in Vizima\u2019s dim corridors. As a witcher, he travels the land hunting monsters and negotiating political intrigue. He is in the Royal Palace to investigate rumors of a cursed noble and to protect the kingdom from a hidden threat.",
+          "region": "Royal Palace in Vizima"
+        }
+      }
+    },
+    "Velen": {
+      "name": "Velen",
+      "description": "Velen, also called the No Man's Land, is a scarred plain of swamps, ruined farms, and war\u2011torn villages under perpetual mist. Its people are mostly peasants, afflicted by famine and bandit raids, along with scattered soldiers from the Northern Kingdoms. The region is controlled by the ruthless warlord Stregobor's followers, the Crones of Crookback Bog, and the loosely organized Scoia\u2019tael rebels. Dangerous creatures like leshens, drowners, and wraiths roam the marshes, making travel hazardous.",
+      "world": "The Continent",
+      "characters": {
+        "Geralt of Rivia": {
+          "name": "Geralt of Rivia",
+          "description": "Geralt is a tall, scarred witcher with white hair and amber eyes, his armor bears the Wolf School insignia. He is a professional monster hunter hired to track and slay dangerous creatures. He has traveled to Velen to investigate a surge of restless specters and a cursed village, seeking both a reward and clues about the Wild Hunt.",
+          "region": "Velen"
+        }
+      }
+    },
+    "Novigrad": {
+      "name": "Novigrad",
+      "description": "Novigrad is a bustling free port city built on the banks of the Pontar River, famed for its towering cathedral, vibrant bazaars, and dark alleys. Citizens include merchants, artisans, scholars, and a large population of refugees and outcasts. Powerful factions such as the Church of the Eternal Fire, the criminal syndicate of the Rats, and the secretive Lodge of Sorceresses vie for influence. The city is also home to guilds of mages, thieves, and a constant presence of street guards and hired mercenaries.",
+      "world": "The Continent",
+      "characters": {
+        "Geralt of Rivia": {
+          "name": "Geralt of Rivia",
+          "description": "Geralt stands tall, his white hair pulled back, and his yellow eyes scan the city's alleys. He wears his familiar leather armor, a silver sword at his hip and a steel blade strapped to his back. As a witcher, he travels the streets hunting monsters and seeking contracts. In Novigrad he searches for information about Ciri and the mysterious Wild Hunt.",
+          "region": "Novigrad"
+        }
+      }
+    },
+    "The Skellige Isles": {
+      "name": "The Skellige Isles",
+      "description": "The Skellige Isles are a rugged archipelago of storm\u2011 battered cliffs, pine forests, and windswept villages that value strength and seafaring skill. Inhabitants are fierce islanders, clan chiefs, and seasoned sailors who follow ancient codes of honor. The major clans\u2014Hjalmar, Irden, and others\u2014compete for territory, while druids and skalds preserve old myths and rites. A strong navy of warships patrols the seas, and the local taverns echo with the tales of warriors and the songs of bards.",
+      "world": "The Continent",
+      "characters": {
+        "Geralt of Rivia": {
+          "name": "Geralt of Rivia",
+          "description": "Geralt is a tall, white\u2011haired witcher with scarred skin and amber eyes. He wears weather\u2011worn leather armor and a silver sword at his hip. His profession is a monster hunter and a trained witcher of the School of the Wolf. He has come to the Skellige Isles to investigate a surge of sea\u2011creature attacks and to seek a contract from the local jarls. He also hopes to find clues about Ciri\u2019s whereabouts.",
+          "region": "The Skellige Isles"
+        }
+      }
+    },
+    "Kaer Morhen": {
+      "name": "Kaer Morhen",
+      "description": "Kaer Morhen is an ancient, snow\u2011capped keep high in the Blue Mountains, serving as the witchers' training ground and sanctuary. It is inhabited by a handful of surviving witchers, their mentors, and a few loyal caretakers. The walls protect hidden armories, alchemy labs, and a library of monster lore. Despite its isolation, occasional visitors like scholars, merchants, or desperate fugitives seek refuge within its stone halls.",
+      "world": "The Continent",
+      "characters": {
+        "Geralt of Rivia": {
+          "name": "Geralt of Rivia",
+          "description": "Geralt stands tall with white hair tied back, a scarred face, and piercing yellow eyes. He is a witcher, a monster hunter trained at Kaer Morhen. He has returned to the fortress to recuperate, train new apprentices, and ready himself for the upcoming threats. His purpose is to gather intelligence on the Wild Hunt and forge alliances for the battles ahead.",
+          "region": "Kaer Morhen"
+        }
+      }
+    }
+  }
+}

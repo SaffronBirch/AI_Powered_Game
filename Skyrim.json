@@ -1,0 +1,481 @@
+{
+  "name": "Skyrim",
+  "description": "Skyrim is a rugged northern province of Tamriel, filled with snow\u2011capped mountains, ancient ruins, and fierce wildlife. Dragons have returned, awakening the Dragonborn to master powerful shouts and confront an ancient prophecy. Factions such as the Empire, Stormcloaks, Companions, and many Daedric cults vie for power while hidden artifacts and secret societies await discovery.",
+  "regions": {
+    "Haafingar": {
+      "description": "Haifingar lies in the northwest corner of Skyrim, bordering the Sea of Ghosts. Its capital, Solitude, sits on a rocky peninsula and houses the Blue Palace and the Bard's College. The region is known for its rugged coastline, snowy peaks, and fishing villages. Residents include the Imperial-aligned nobility of Solitude, Nordic farmers, and the Sea Elf (Bosmer) traders who dock at the harbor.",
+      "characters": {
+        "Jarl Elisif the Fair": {
+          "description": "Tall with silver hair braided into a crown, she wears regal blue robes edged in gold. As Jarl of Solitude she governs the city and its surrounding lands. She maintains Imperial rule and protects the region from threats.",
+          "backstory": "Born to a noble Nord family, Elisif rose through Imperial service before marrying the former Jarl of Solitude. She earned her title through bravery in battle and diplomatic skill. Now she rules with a steady hand.",
+          "personality": [
+            "Loyal",
+            "Stern",
+            "Compassionate",
+            "Strategic",
+            "Proud"
+          ]
+        },
+        "Maeric Windrune": {
+          "description": "A slender young man with dark curls, a lilac scarf, and a well-worn lute slung across his back. He studies at the Bard's College in Solitude, performing for patrons and honing his craft. He seeks fame and the preservation of ancient songs.",
+          "backstory": "Orphaned in Riverwood, Maeric traveled to Solitude to fulfill his dream of becoming a master bard. He survived on odd jobs while earning a place at the college. His music now reflects his wanderer's heart.",
+          "personality": [
+            "Curious",
+            "Charming",
+            "Melancholic",
+            "Optimistic",
+            "Idealistic"
+          ]
+        },
+        "Lyris Greenleaf": {
+          "description": "Petite with bright green eyes and intricate tribal tattoos, she wears leather armor fitted for sea travel. As a Bosmer trader she sails to Haafingar carrying exotic woods, spices, and rare artifacts. She docks at Solitude's harbor to trade with locals.",
+          "backstory": "Leaving Valenwood after a clan dispute, Lyris sought new markets across the Sea of Ghosts. Her skillful negotiation made her a respected figure among Nord merchants. She now bridges Valenwood and Skyrim's economies.",
+          "personality": ["Shrewd", "Friendly", "Adventurous", "Witty", "Proud"]
+        },
+        "Torvald Iceheart": {
+          "description": "Burly with a thick beard, woolen coat, and a sturdy scythe, Torvald works the rugged farms near Dawnstar. He tends barley fields and shepherds goats on snowy steppes. His purpose is to feed his village and keep the land productive.",
+          "backstory": "Torvald comes from a line of farmers who have tilled Haafingar soil for generations. He survived harsh winters that claimed many of his neighbors. The legacy drives his dedication to the land.",
+          "personality": [
+            "Stoic",
+            "Hardworking",
+            "Reserved",
+            "Reliable",
+            "Grudgingly kind"
+          ]
+        },
+        "Lady Maya Ravenscar": {
+          "description": "Elegant with auburn hair and fine silk garments, she carries a polished seal of the Imperial Legion. As an ambassador she negotiates trade and military agreements for Imperial interests. She resides in a manor within Solitude's noble district.",
+          "backstory": "Maya was raised in Cyrodiil, educated in politics before marrying into a Nord noble house to strengthen Imperial ties. Her diplomatic talent quickly earned her a position with the Legion. She now works to keep Skyrim loyal to the Empire.",
+          "personality": [
+            "Diplomatic",
+            "Ambitious",
+            "Charismatic",
+            "Calculating",
+            "Patient"
+          ]
+        }
+      }
+    },
+    "The Pale": {
+      "description": "The Pale occupies the far north of Skyrim, stretching from the icy tundra to the coastline of the Sea of Ghosts. Dawnstar, its main town, is a mining hub built on cliffs overlooking the sea. The region features frozen wastelands, aurora-lit skies, and ancient Nord burial mounds. Its people are hardy Nord miners, trappers, and a small community of Stormcloak supporters.",
+      "characters": {
+        "Jorvund Icehand": {
+          "description": "A broad-shouldered Nord with a frost-caked beard and copper skin from years in the mines. He works as a lead ore extractor in Dawnstar's mines, extracting silver and iron for the town. He stays in the Pale to provide for his family and protect the mining claims from bandits.",
+          "backstory": "Born to a family of miners, Jorvund learned to swing a pickaxe before he could read. He survived a cave collapse that killed several comrades, earning his nickname \"Icehand\" for the cold debris he cleared. He now leads a small crew, hoping to revive the dwindling economy of the far north. His loyalty to Dawnstar drives him to defend the mines at all costs.",
+          "personality": [
+            "steadfast",
+            "gritty",
+            "protective",
+            "practical",
+            "reserved"
+          ]
+        },
+        "Althea Frostwind": {
+          "description": "A lithe Nord woman with wind\u2011blown silver hair, fur-lined coat, and a belt of hunting knives. She is a trapper who harvests wolves, bears, and the rare snow elk for pelts and meat. She lives on the outskirts of Dawnstar to sustain the town's food supply and trade furs for supplies.",
+          "backstory": "Althea grew up in the wilds after her parents perished in a blizzard, taught by her grandmother to track and trap. She once saved a group of Stormcloak scouts from a hungry worgen pack, earning their respect. Over time she carved out a small cabin near the burial mounds, where she stores her catches. She now seeks to preserve the balance between nature and the encroaching miners.",
+          "personality": [
+            "resourceful",
+            "independent",
+            "cautious",
+            "empathetic",
+            "stoic"
+          ]
+        },
+        "Brynjar Stormbreaker": {
+          "description": "A scarred, middle\u2011aged Nord with a shaved head, a red warshirt, and a silvered battle axe slung over his shoulder. He is a devoted Stormcloak supporter rallying locals to the cause against the Empire. He remains in the Pale to recruit miners and trappers for the rebellion.",
+          "backstory": "Brynjar served in the Imperial Legion before the civil war, but switched sides after his village was taxed into poverty. He was wounded at the Battle of Rorikstead, losing his left eye, a wound he wears as a badge of honor. He now travels between Dawnstar taverns spreading propaganda and organizing covert meetings. His ultimate goal is to see Skyrim free from Imperial rule.",
+          "personality": [
+            "passionate",
+            "charismatic",
+            "impulsive",
+            "determined",
+            "loyal"
+          ]
+        },
+        "Captain Rorik Seawatch": {
+          "description": "A weather\u2011beaten Nord with a thick black beard, sea\u2011blue eyes, and a navy coat trimmed with whale bone. He commands the small fleet of fishing and trade vessels in Dawnstar's harbor. He stays in the Pale to control the flow of goods and ensure safe passage through the Sea of Ghosts.",
+          "backstory": "Rorik was once a privateer sailing the western seas, but a severe storm forced his ship into the Pale's icy waters where he was rescued by Dawnstar locals. Grateful, he settled and bought a berth, eventually becoming harbor master. He knows every hidden cove and crevasse, using that knowledge to protect his ships from pirates. He dreams of one day charting a route to Solstheim.",
+          "personality": [
+            "pragmatic",
+            "observant",
+            "authoritative",
+            "warm",
+            "cautious"
+          ]
+        },
+        "Eira Nightshade": {
+          "description": "An elderly Nord woman with pale skin, long white hair braided with raven feathers, and a cloak of moss and iron icons. She acts as a herbalist and keeper of the ancient burial mounds surrounding Dawnstar. She remains in the Pale to guard the sacred sites and aid those who respect the old ways.",
+          "backstory": "Eira descends from a line of Nord priests who tended the burial mounds for centuries. As a child she witnessed a dragon\u2019s fire scorch the hills, sparking her vow to protect the spirits of the dead. She learned the secrets of frost herbs that can heal even the gravest wounds. Now she offers remedies to miners and guides lost souls, fearing that modern greed will desecrate the ancient grounds.",
+          "personality": [
+            "wise",
+            "mysterious",
+            "compassionate",
+            "protective",
+            "patient"
+          ]
+        }
+      }
+    },
+    "Winterhold": {
+      "description": "Winterhold sits on the northeastern coast, once a thriving city now reduced to ruins after a magical disaster. The College of Winterhold dominates the landscape, teaching arcane arts in its towering towers. Snow\u2011covered cliffs, frozen lakes, and the Windy Valley define the terrain. Residents include scholars, magicians, and a few resilient villagers who cling to the old town's remnants.",
+      "characters": {
+        "Arch-Mage Alduin Rime": {
+          "description": "A tall, gaunt man cloaked in silvered frost robes, his hair a frosted cascade of white. He serves as the headmaster of the College of Winterhold, overseeing arcane research and protecting the city from lingering magical fallout. His purpose is to preserve ancient knowledge and prevent another disaster.",
+          "backstory": "Born in the remote village of Dawnstar, Alduin survived the Great Cataclysm by shielding his family with a failed spell, sparking his obsession with mastering high magic. He rose through the College ranks, eventually taking the helm after the previous arch-mage vanished in a failed summoning.",
+          "personality": ["wise", "obsessive", "stern", "protective", "lonely"]
+        },
+        "Scholar Jorund Stormhand": {
+          "description": "A middle\u2011aged Nord with a scarred left cheek, wearing a battered leather coat over layered robes, always carrying a satchel of parchment. He researches the ancient runes found in the ruins and teaches apprentices in the lower halls. He remains in Winterhold to decode the disaster's origin.",
+          "backstory": "Jorund was once a trader who lost his caravan to a blizzard near Winterhold; he discovered a hidden library and devoted his life to scholarship. His dedication earned him a place among the College's resident scholars.",
+          "personality": [
+            "curious",
+            "meticulous",
+            "patient",
+            "reserved",
+            "determined"
+          ]
+        },
+        "Villager Kara Snowmantle": {
+          "description": "A stout woman with rosy cheeks, thick woolen garments, and a fur\u2011lined hood, often seen carrying bundles of firewood. She runs the modest inn that shelters the few remaining townsfolk. Her purpose is to keep the community alive amidst the ruins.",
+          "backstory": "Kara's family has tended the inn for generations; after the magical disaster claimed most of Winterhold, she refused to abandon her home and now offers shelter to travelers and scholars alike.",
+          "personality": [
+            "warm",
+            "resilient",
+            "practical",
+            "accepting",
+            "stubborn"
+          ]
+        },
+        "Frost Mage Ysolda Icevein": {
+          "description": "A young woman with icy blue eyes, hair braided with icicle charms, wearing a crystal\u2011cuted frost staff. She studies elemental magic, particularly ice manipulation, under the College's tutelage. She stays in Winterhold to perfect her craft and assist in rebuilding.",
+          "backstory": "Ysolda grew up in the Windy Valley, discovering her innate ability to shape ice at a young age. A wandering mage recruited her for the College, where she now seeks mastery to protect her homeland.",
+          "personality": [
+            "enthusiastic",
+            "impulsive",
+            "loyal",
+            "optimistic",
+            "headstrong"
+          ]
+        },
+        "Ranger Thrain Wolfwatch": {
+          "description": "A lean Nord with weathered skin, cloaked in furs and bearing a longbow etched with runes, accompanied by a snowy owl. He patrols the frozen cliffs and frozen lakes, hunting for threats and guiding travelers. His purpose is to safeguard the region's wildlife and keep the ruin\u2019s perimeters secure.",
+          "backstory": "Thrain was a scout for the Imperial Legion before the disaster; after the city fell, he retreated to the wilds, becoming a protector of the harsh frontier. He now works as a guide for scholars venturing into the ruins.",
+          "personality": [
+            "calm",
+            "observant",
+            "independent",
+            "stoic",
+            "protective"
+          ]
+        }
+      }
+    },
+    "The Rift": {
+      "description": "The Rift lies in the southeastern part of Skyrim, centered on the River Hjaalmarch and the volcanic lake of Lake Rumare. Its capital, Riften, is built on a series of canals and is known for the Thieves Guild and its bustling market. The region boasts dense forests, hot springs, and the ruins of old Nord temples. Inhabitants are a mix of Nord merchants, fishermen, and the secretive thieves.",
+      "characters": {
+        "Aldis Stormrider": {
+          "description": "A broad\u2011shouldered Nord with a scarred cheek and a merchant's silver tongue. He wears a fur\u2011lined coat embroidered with the emblem of the Stormcloak rebellion. Aldis runs a stall near the canals, selling furs, iron, and rare herbs. He travels the region to acquire goods for his shop and to fund his family's escape from the war.",
+          "backstory": "Born in Windhelm, Aldis lost his home to a fire during the civil war and fled to The Rift, where he apprenticed under a seasoned trader. Over the years he built his own business, using the bustling market of Riften to rebuild his family's fortune. He hopes one day to return and reclaim his ancestral lands.",
+          "personality": [
+            "pragmatic",
+            "charismatic",
+            "resilient",
+            "cautious",
+            "generous"
+          ]
+        },
+        "Brynna Wavecaller": {
+          "description": "A wiry Nord woman with sea\u2011salted hair and a weather\u2011worn trawler coat. She rows out onto Lake Rumare each dawn, casting nets for trout and rare lake fish. Brynna sells her catch at the market and occasionally trades with the Thieves Guild for protection. She stays in the region to honor her family's centuries\u2011old fishing tradition.",
+          "backstory": "Descended from a line of lake fishermen, Brynna grew up listening to tales of the lake's hidden hot springs. When a plague struck her village, she used her earnings to fund a cure, earning the gratitude of nearby townsfolk. Now she balances her love of the water with a growing curiosity about the ancient ruins nearby.",
+          "personality": [
+            "patient",
+            "hardworking",
+            "superstitious",
+            "kind",
+            "independent"
+          ]
+        },
+        "Vex Silverhand": {
+          "description": "A lithe Elf with ink\u2011black hair shaved at the sides, wearing dark leather armor stitched with silver thread. Vex moves silently through Riften's canals, pilfering valuables for the Thieves Guild. She is known for her deft lockpicks and a silver talon ring she never removes. Her presence in The Rift is to rise through the guild's ranks and claim a hidden cache rumored to lie beneath an old Nord temple.",
+          "backstory": "Orphaned in the outskirts of Morrowind, Vex was recruited by the Thieves Guild after stealing a mithril brooch from a traveling merchant. She quickly proved herself and was sent to The Rift to establish a new safe house. Vex seeks revenge against the noble family that once betrayed her brother.",
+          "personality": [
+            "cunning",
+            "ambitious",
+            "enigmatic",
+            "loyal",
+            "sarcastic"
+          ]
+        },
+        "Jarl Laila": {
+          "description": "A regal Nord woman with powdered blonde hair and a polished war axe mounted above her throne. She wears the ceremonial armor of The Rift, adorned with the emblem of a golden falcon. Laila governs Riften from the castle overlooking the canals, mediating between merchants and the Thieves Guild. She remains in the region to maintain stability and protect her people's prosperity.",
+          "backstory": "Born to a minor noble house, Laila earned the title of Jarl after proving her tactical skill during the Great War. She survived assassination attempts by rival houses and earned the trust of both the common folk and the guild. Laila now works to keep the fragile peace that allows trade to flourish.",
+          "personality": [
+            "determined",
+            "just",
+            "pragmatic",
+            "diplomatic",
+            "stern"
+          ]
+        },
+        "Arin Hearthfire": {
+          "description": "An elderly Nord priest with a long grey beard, wearing simple brown robes embroidered with a burning hearth symbol. He tends the ruined temple of Kynesgrove, offering prayers for the old gods. Arin guides travelers seeking spiritual counsel and helps maintain the ancient runes. He resides in The Rift to preserve the forgotten religious rites of his ancestors.",
+          "backstory": "Arin was once a warrior who survived the Battle of the Red Eagle, after which he devoted his life to the old Nord spirits. He discovered the ruins during a pilgrimage and felt called to protect them from desecration. Over decades he has become a quiet guardian of forgotten lore.",
+          "personality": [
+            "wise",
+            "serene",
+            "stoic",
+            "compassionate",
+            "independent"
+          ]
+        },
+        "Selene Emberbrook": {
+          "description": "A youthful Breton healer with auburn curls and a habit of wearing woven moss-green shawls. She operates a modest bathhouse near the hot springs, using mineral water to treat wounds and ailments. Selene blends alchemical remedies with traditional Bathhouse practices. She stays in The Rift to study the unique geothermal properties of Lake Rumare's surroundings.",
+          "backstory": "Selene apprenticed under a renowned alchemist in Solitude before traveling to The Rift to research rare hot spring herbs. She discovered a rare crystal near the lake that enhances healing, prompting her to settle near the springs. Her ultimate goal is to develop a cure for a lingering plague affecting northern coastal towns.",
+          "personality": [
+            "curious",
+            "empathetic",
+            "meticulous",
+            "optimistic",
+            "resourceful"
+          ]
+        }
+      }
+    },
+    "Falkreath Hold": {
+      "description": "Falkreath Hold occupies the southwestern forested hills of Skyrim, with the town of Falkreath nestled among towering pines. The area is famous for its large cemetery, abundant wildlife, and the ancient shrine of Mara. The landscape is marked by misty woods, rolling meadows, and hidden lakes. Residents are primarily farmers, hunters, and a small community of druids who protect the surrounding forest.",
+      "characters": {}
+    },
+    "The Reach": {
+      "description": "The Reach lies in the western mountains, bordering High Rock and the border of Cyrodiil. Markarth, its capital, is built into a sheer cliff and features massive stone Dwemer-constructed walls. The region is known for its deep valleys, dangerous wildlife, and the Red Mountain volcano visible in the distance. Its people include a mix of Nord miners, Reachmen clans, and refugees fleeing political turmoil.",
+      "characters": {
+        "Bjurjar Stonehand": {
+          "description": "A broad\u2011shouldered Nord with a grizzled beard and soot\u2011stained hands. He works as a miner in the silver veins of the Reach, extracting ore for the city of Markarth. He stays in the region to earn a living and support his surviving kin. He is known for his rugged appearance and deep knowledge of the tunnels.",
+          "backstory": "Born in Dushnikh Yal, Bjurjar lost his father in a mine collapse and vowed to master the craft. He joined the Miners Guild and climbed the ranks, earning the nickname Stonehand for his endurance. His family now lives in a modest home near the cliffs, and he continues to protect their future.",
+          "personality": [
+            "resilient",
+            "stubborn",
+            "loyal",
+            "gruff",
+            "pragmatic"
+          ]
+        },
+        "Miraal the Outcast": {
+          "description": "A tall Reachman with ash\u2011gray skin, tribal tattoos, and a weather\u2011worn coat of fur. He survives as a hunter, tracking game in the deep valleys and selling meat to Markarth merchants. He remains in the Reach to prove his worth after exile. His keen eyes and silent steps mark him as a feared tracker.",
+          "backstory": "Miraal was banished from his clan for refusing a blood oath that would have required betrayal of another family. He roamed the wilderness, learning to live off the land and earning respect among wandering traders. Though he longs for redemption, he now walks his own path.",
+          "personality": ["solitary", "cunning", "wary", "proud", "resourceful"]
+        },
+        "Silene Valtheim": {
+          "description": "A slender Breton with dark hair, clutching a weathered spellbook and a staff of ash. She works as a scholar\u2011mage in the Hall of the Vigilant, researching Dwemer artefacts. She fled the turmoil of Cyrodiil and seeks safety and knowledge in Markarth. Her calm demeanor hides a fierce drive for understanding.",
+          "backstory": "Silene escaped the war in Cyrodiil with her family, but they were lost to disease soon after arriving in the Reach. Determined to honor their memory, she devoted herself to uncovering ancient secrets that might protect the vulnerable. She now mentors apprentices while pursuing forgotten magics.",
+          "personality": [
+            "curious",
+            "compassionate",
+            "anxious",
+            "determined",
+            "intelligent"
+          ]
+        },
+        "Duric Ironfist": {
+          "description": "A bronze\u2011hued Dwemer automaton with intricate gears and a polished helm. Its purpose is to guard the ancient stone walls beneath Markarth and assist miners when needed. It remains active in the Reach after being reactivated by a wandering mage. Its movements are precise and unhurried.",
+          "backstory": "Constructed millennia ago to protect a Dwemer treasury, Duric fell into silence when the kingdom vanished. A mage discovered its activation crystal and rekindled its function, assigning it to safeguard the cliffs. Though its creators are gone, its code drives it to fulfill its original duty.",
+          "personality": [
+            "dutiful",
+            "unfeeling",
+            "relentless",
+            "obedient",
+            "imperturbable"
+          ]
+        },
+        "Veenra Nightshadow": {
+          "description": "A Redguard mercenary with dark skin, a scar across one eye, and twin swords sheathed at his side. He patrols the outer roads of Markarth, hired by the city guard to fend off bandits and raiders. He stays in the Reach for the steady pay and the chance to test his skill. His presence commands respect among travelers.",
+          "backstory": "Veenri served in the Imperial Legion until a betrayal left his unit decimated. He left the army, taking up the sword as a mercenary, and found work protecting the dangerous mountain passes. His reputation grew as a fearless defender of the weak.",
+          "personality": [
+            "disciplined",
+            "fearless",
+            "cynical",
+            "honorable",
+            "adaptable"
+          ]
+        }
+      }
+    },
+    "Whiterun Hold": {
+      "description": "Whiterun Hold sits in the central plains of Skyrim, anchored by the bustling city of Whiterun on the River Whiterun. The region features rolling grasslands, the ancient Jorrvaskr mead hall, and the nearby Dragonsreach, where dragons once nested. It is a crossroads for merchants, travelers, and adventurers. Residents are largely Nord farmers, warriors of the Companions, and a small Imperial garrison.",
+      "characters": {
+        "Balgruuf the Greater": {
+          "description": "Balgruuf is a stout Nord with a golden braided beard, clad in heavy plate armor bearing the Whiterun crest. He governs Whiterun from Dragonsreach, overseeing trade and defense. He is a respected leader among the locals.",
+          "backstory": "Born on a farm in the Plains, he rose through the ranks of the city's militia after his father, the previous Jarl, died in battle. His wise rule helped keep peace during the dragon resurgence.",
+          "personality": [
+            "stoic",
+            "fair",
+            "cautious",
+            "protective",
+            "honorable"
+          ]
+        },
+        "Lydia": {
+          "description": "Lydia is a tall, armored housecarl with striking red hair and a scar across her cheek. She wears the Companions' steel plate and carries a battleaxe. She serves as the Jarl's personal guard.",
+          "backstory": "Orphaned in Riverwood, she was taken in by the Companions and trained as a warrior, eventually earning a place as a housecarl for Whiterun. She swore an oath to protect the Jarl and the city.",
+          "personality": ["loyal", "disciplined", "stoic", "proud", "diligent"]
+        },
+        "Hadvar": {
+          "description": "Hadvar is a disciplined Imperial soldier with short brown hair, wearing the Imperial Legion's white and red uniform. He carries a spear and shield, patrolling the city walls. He is stationed at Dragonsreach to maintain order.",
+          "backstory": "Assigned to Whiterun after the civil war, he seeks to uphold Imperial law while navigating the tensions between Nords and Imperials. He helped defend the city during the dragon attacks.",
+          "personality": [
+            "dutiful",
+            "pragmatic",
+            "courageous",
+            "loyal",
+            "optimistic"
+          ]
+        },
+        "Aela the Huntress": {
+          "description": "Aela is a fierce red-haired Nord, clad in leather armor and a fur cloak, always carrying her longbow. Her eyes are sharp, reflecting a lifetime of tracking game. She roams the wilderness as a Companion.",
+          "backstory": "Raised in The Pale and later joining the Companions, she earned the title of Huntress for her skill in tracking and slaying beasts. She now mentors younger hunters in Whiterun.",
+          "personality": [
+            "fierce",
+            "independent",
+            "blunt",
+            "compassionate",
+            "proud"
+          ]
+        },
+        "Kodlak Whitemane": {
+          "description": "Kodlak is an elderly Nord with a long white beard, wearing weathered steel armor etched with dragon motifs. He wields a greatsword and carries the weight of many battles. He leads the Companions from Jorrvaskr.",
+          "backstory": "Founder of the Companions, he fought in the Great War against Alduin and now guides the brotherhood with wisdom gained over centuries. He mentors warriors like Aela and protects the hold.",
+          "personality": ["wise", "disciplined", "protective", "solemn", "just"]
+        },
+        "Gerdur": {
+          "description": "Gerdur is a middle\u2011aged Nord woman wearing a simple wool dress and a belt of pouches, often seen with a basket of herbs. Her face bears the gentle lines of years spent outdoors. She sells farm produce at Whiterun's market.",
+          "backstory": "Born to a farming family on the Plains, she inherited the family plot after her parents' passing and now provides food for the city while raising two children, fostering community ties.",
+          "personality": [
+            "hardworking",
+            "warm",
+            "talkative",
+            "practical",
+            "generous"
+          ]
+        },
+        "Rorik": {
+          "description": "Rorik is a muscular farmer clad in a straw hat, leather vest, and sturdy boots, wielding a scythe when not tending his fields. His broad shoulders and sun\u2011kissed skin show his labor\u2011intensive life. He supplies grain to Whiterun\u2019s bakers.",
+          "backstory": "His family has cultivated the central plains for generations; after his father's death, Rorik took over the farm and expanded it, becoming one of the region\u2019s most reliable suppliers.",
+          "personality": ["sturdy", "diligent", "friendly", "stubborn", "proud"]
+        }
+      }
+    },
+    "Eastmarch": {
+      "description": "Eastmarch covers the far eastern portion of Skyrim, bordered by the Sea of Ghosts and the border with Morrowind. Windhelm, its ancient capital, stands on a hill above the White River and is the seat of the Stormcloaks. The land is cold, with glaciers, snowy plains, and the heart of the continent's oldest Nordic settlements. Its people are resilient Nord warriors, refugees from the civil war, and a few Dunmer traders.",
+      "characters": {
+        "Ulfric Stormcloak": {
+          "description": "A tall, scarred Nord with a grizzled beard, wearing the blue Stormcloak armor. He is the Jarl of Windhelm and leads the rebellion against the Empire. He remains in Eastmarch to govern and rally his forces.",
+          "backstory": "Born in Windhelm, Ulfric grew up hearing tales of Nordic glory. He rose through the ranks of the Imperial Guard before being betrayed, sparking his hatred for the Empire. His oath to restore Skyrim's independence drives his actions.",
+          "personality": [
+            "determined",
+            "charismatic",
+            "stubborn",
+            "authoritative",
+            "pragmatic"
+          ]
+        },
+        "Jorunn Skald": {
+          "description": "A middle\u2011aged Nord with silver hair braided down her back, dressed in furs and a fur\u2011lined harp case. She travels the snowy plains performing ancient songs to boost morale. She stays in Eastmarch to preserve Nord heritage during the war.",
+          "backstory": "Jorunn was raised by a family of bards in the highlands, learning the old sagas. When the civil war erupted, she joined the Stormcloaks to keep their stories alive. She now wanders between camps, sharing history and hope.",
+          "personality": [
+            "empathetic",
+            "observant",
+            "loyal",
+            "melancholic",
+            "inspirational"
+          ]
+        },
+        "Mavren Dawnfire": {
+          "description": "A slender Dunmer with crimson eyes and ash\u2011gray skin, wearing light leather and a satchel of exotic goods. He is a merchant trading silks and alchemical ingredients. He operates out of Windhelm's market to expand his trade network.",
+          "backstory": "Mavren left Morrowind after a political scandal forced him into exile. He found refuge in Eastmarch, where the cold climate suited his hardy nature. Over years he built a reputation for reliable wares, attracting both warriors and civilians.",
+          "personality": [
+            "cunning",
+            "resourceful",
+            "patient",
+            "pragmatic",
+            "reserved"
+          ]
+        },
+        "Elia Winterborn": {
+          "description": "A young Nord woman with frost\u2011bitten hair and a patched leather coat, carrying a simple iron sword. She is a refugee fleeing the Imperial\u2011occupied central hold. She stays in Eastmarch seeking safety and a chance to join the Stormcloaks.",
+          "backstory": "Elia's village was razed during the war, killing her family. She trekked north through blizzards, surviving on her wits and the goodwill of strangers. Now she trains with Stormcloak soldiers, hoping to avenge her loss.",
+          "personality": [
+            "resilient",
+            "determined",
+            "trusting",
+            "quick\u2011tempered",
+            "hopeful"
+          ]
+        },
+        "Rorik Stonefist": {
+          "description": "A broad\u2011shouldered Nord with a shaved beard, clad in heavy mail and bearing a massive war hammer. He works as a blacksmith and part\u2011time guard in Windhelm. He remains in Eastmarch to forge weapons for the Stormcloak cause.",
+          "backstory": "Rorik was born to a line of smiths in Dawnstar, learning the forge as a child. He joined the Stormcloaks after witnessing Imperial oppression of his hometown. His skill with steel now fuels the rebellion.",
+          "personality": [
+            "stoic",
+            "dedicated",
+            "honorable",
+            "methodical",
+            "protective"
+          ]
+        }
+      }
+    },
+    "Hjaalmarch": {
+      "description": "Hjaalmarch occupies the central western marshes and lowlands of Skyrim, with Morthal perched on a small island in a lake. The region is known for its misty wetlands, abundant fish, and the ancient tomb of Ysgramor nearby. It experiences constant fog and cold rain. Residents include isolated Nordic fishermen, hunters, and a small community of scholars studying the region's lore.",
+      "characters": {
+        "Jorunn Stormfisher": {
+          "description": "Jorunn is a stout, weathered Nord with a tangled grey beard and oily hair, always wearing a fur-lined coat and a wide-brimmed hat. He works as a fisherman on the misty waters of Lake Honningbrei, casting nets from his rickety boat. He stays in Hjaalmarch to harvest the abundant fish that feed the local community.",
+          "backstory": "Born to a line of lake-dwellers, Jorunn inherited his family's boat after his father's death and has spent his life mastering the treacherous marsh waters, surviving countless storms and the occasional swamp beast.",
+          "personality": [
+            "tenacious",
+            "practical",
+            "quiet",
+            "observant",
+            "stoic"
+          ]
+        },
+        "Edda Lightquill": {
+          "description": "Edda is a slender, silver-haired scholar with sharp blue eyes, dressed in simple wool robes and a satchel of scrolls. She serves as a researcher at the small library in Morthal, studying the lore of the Ysgramor tomb and local wetlands. Her purpose is to document ancient Nord history and the region's unique ecology.",
+          "backstory": "Raised in Whiterun, Edda left the city to pursue her fascination with forgotten history, joining a guild of scholars who sent her to Hjaalmarch to investigate the tomb rumored to hold Ysgramor's secrets.",
+          "personality": [
+            "curious",
+            "analytical",
+            "methodical",
+            "introverted",
+            "determined"
+          ]
+        },
+        "Halvar Ironhunt": {
+          "description": "Halvar is a rugged hunter with a scar across his cheek, muscular build, and dark hair tied back with leather strips. He roams the marshes tracking elk, boars, and the occasional mudcrab, providing meat and pelts to the villagers. He remains in Hjaalmarch for the plentiful game and the challenge of the harsh terrain.",
+          "backstory": "Orphaned during a famine, Halvar learned to survive by hunting in the marshes, eventually earning the respect of Morthal's residents who rely on his skill for food.",
+          "personality": [
+            "resourceful",
+            "brave",
+            "independent",
+            "stoic",
+            "protective"
+          ]
+        },
+        "Selvi Gravekeeper": {
+          "description": "Selvi is an elderly Nord woman with white braided hair, a stoic expression, and a cloak of deep green embroidered with ancient symbols. She tends the tomb of Ysgramor, ensuring its sanctity and preventing raiders from entering. She stays in Hjaalmarch out of duty to protect the sacred site.",
+          "backstory": "Descended from a lineage of tomb guardians, Selvi was chosen as the caretaker after her mother passed, inheriting the ancient keys and the oath to guard the legendary hero's resting place.",
+          "personality": ["vigilant", "loyal", "wise", "reserved", "steadfast"]
+        },
+        "Brenna Hearthfire": {
+          "description": "Brenna is a warm\u2011hearted innkeeper with rosy cheeks, auburn hair, and a perpetual smile, wearing a sturdy leather apron over woolen dresses. She runs the \u201cMarshlight Inn\u201d in Morthal, offering travelers food, shelter, and stories of the foggy lands. She lives in Hjaalmarch to provide a safe haven for locals and adventurers alike.",
+          "backstory": "Brenna grew up on a nearby farm, but after a bad winter she moved to Morthal, buying the old inn and turning it into a beloved gathering place for the community.",
+          "personality": [
+            "friendly",
+            "generous",
+            "patient",
+            "talkative",
+            "optimistic"
+          ]
+        }
+      }
+    }
+  }
+}
