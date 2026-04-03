@@ -20,6 +20,11 @@ import math
 import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
+import json
+import itertools
+import os
+from generate_npc_admin_session import build_trait_phrase, build_biography_description, build_item_preambles, generate_admin_session
+ 
 
 @dataclass
 class NPCProfile:
@@ -41,7 +46,7 @@ class NPCProfile:
     goals: str = ""
     flaws: str = ""
     # Personality
-    personality: dict = field(default_factory=dict)
+    personality: list = field(default_factory=list)
     
     def create_profile_UI(self):
         def section(title, content):
@@ -144,6 +149,15 @@ trait_adjectives = {
         ("socially conservative",  "socially progressive"),
     ],
 }
+
+trait_shortforms = {
+    "Extaversion" : "ext",
+    "Agreeableness": "agr",
+    "Conscientiousness": "con",
+    "Neuroticism": "neu",
+    "Openness": "ope",
+}
+
 # A list of lists --> list of all adjective pairs and their respective ratings --> ("introverted", "extraverted", 1)
 all_ratings = []
 
@@ -154,6 +168,10 @@ personality_inputs = []
 # second element is the low marker, and the third element is the high marker --> ("ext", "introverted, "extraverted")
 personality_keys = []
 
+# Dict of the median ratings from create_radar()
+median_ratings = {}
+
+
 # The original expirement set the trait level (Ex. ext0-agr0-con0-neu0-ope1), and has the trait adjective phrase
 # build using the level qualifier that correaltes to the traits level. So all the adjectives had the same qualifer for a given
 # level. 
@@ -162,7 +180,9 @@ personality_keys = []
 # level for the trait, I take the median of the trait ratings.
 def create_radar(*args):
     *ratings, state = args
-   
+
+    #global all_ratings
+
     trait_ratings = {}
     for (trait, low, high), rating in zip(personality_keys, ratings):
         if rating is not None:
@@ -175,15 +195,20 @@ def create_radar(*args):
         median = math.floor(statistics.median(scores))
         medians.append(median)
         labels.append(trait)
+        median_ratings[trait_shortforms[trait]] = median
+
 
         print(f"{trait}: {scores}: {median}")
 
-    personality = {}
+    personality = []
     for (trait, low, high), rating in zip(personality_keys, ratings):
-        personality.setdefault(trait, {})[high] = rating
+        personality.append((trait, (low, high), int(rating)))
     updated = replace(state, personality=personality)
     
     print(personality)
+
+    print(f"all_ratings populated: {len(all_ratings)} entries")  # add this
+    print(all_ratings[:3]) 
     
     # Create the Radar Plot
     fig = go.Figure(data=go.Scatterpolar(
@@ -204,8 +229,8 @@ def create_radar(*args):
     ),
     showlegend=False
     )
+    generate_session(updated)
     return fig, updated, updated.create_profile_UI()
-
 
 
 def update_basic(name, pronouns, age, role, race, appearance, backstory, state):
@@ -218,7 +243,15 @@ def update_additional(relationships, skills, opinions, loves, hates, hobbies, go
                         hates=hates, hobbies=hobbies, goals=goals, flaws=flaws)
     return updated, updated.create_profile_UI()
 
+def generate_session(state):
+            
+    trait_phrase = build_trait_phrase(state.personality)
+    bio = build_biography_description(state)
+    item_preambles = build_item_preambles(trait_phrase, bio, median_ratings)
+    generate_admin_session(item_preambles)
+    return "✅ Admin session saved successfully."
 
+#######################################################################################################
 with gr.Blocks(
     css="""
     .stretch-radio .wrap {
@@ -237,7 +270,6 @@ with gr.Blocks(
     }
                
 """) as demo:
- 
 # Create a profile state to update the profile overview each the submit button is clicked for each tan
     profile_state = gr.State(NPCProfile())
 
@@ -247,6 +279,7 @@ with gr.Blocks(
     with gr.Row():
         with gr.Column(scale=3):
             with gr.Tab("Basic Profile"):
+                gr.Markdown("Please enter the following details about your character. Be sure to write in FIRST PERSON.")
                 with gr.Row():
                     name = gr.Textbox(label="Name", placeholder="e.g. Mira Stonehaven")
                     pronouns = gr.Textbox(label="Pronouns", placeholder="e.g. She/Her, He/Him, They/Them...")
@@ -263,6 +296,8 @@ with gr.Blocks(
 
 
             with gr.Tab("Additional Information"):
+                gr.Markdown("Please enter the following details about your character. Be sure to write in FIRST PERSON.")
+
                 # ── History & Relationships ───────────────────
                 relationships  = gr.Textbox(label="Relationships with Other Characters", lines=3, placeholder="e.g. I have one trusted friend, the village elder. I lost my brother to a dragon attack.")
 
@@ -316,20 +351,19 @@ with gr.Blocks(
                                 gr.Markdown(f"### {low}")
                                 gr.Markdown(f"### <div style='text-align:right'>{high}</div>")
                             rating = gr.Radio(["1", "2", "3", "4", "5", "6", "7", "8", "9"], 
+                                                                value="5",
                                                                 label=None,
                                                                 show_label=False,
-                                                                elem_classes=["stretch-radio"])
+                                                                elem_classes=["stretch-radio"], 
+                                                                type="value")
                             adjective_rating.append(rating)
                             personality_inputs.append(rating)
                             personality_keys.append((trait, low, high))
                             
                             all_ratings.append(adjective_rating)
-
-                #personality = personality_inputs
                          
                 save_personality = gr.Button("Save")
                 
-
 
 
         with gr.Column(scale=2):
@@ -342,6 +376,9 @@ with gr.Blocks(
                     placeholder="Fill in the fields to generate your NPC Profile.",
                     elem_classes=["output-card"]
                 )
+                # generate_file = gr.Button("Save as JSON")
+                # generate_status = gr.Textbox(label=None, interactive=False, visible=True)
+
                 
 
     save_basic.click(
@@ -358,9 +395,27 @@ with gr.Blocks(
         fn=create_radar, 
         inputs=personality_inputs + [profile_state],
         outputs=[radar, profile_state, output])
-
-
+    
+    # generate_file.click(
+    #     fn=generate_session,
+    #     inputs=[profile_state],
+    #     outputs=[generate_status]
+        
+    # )
+    
 
 if __name__ == "__main__":
     demo.launch(share=False)
+
+
+#######################################################################################################
+
+
+
+
+
+
+
+
+
 
