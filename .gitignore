@@ -1,5 +1,5 @@
 /.gradio
-/.venv
+/venv
 /Datasets
 /__pycache__
 helper.py

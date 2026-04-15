@@ -1,0 +1,27 @@
+Dimension,Passed,Total,Rate
+Personality Alignment,0,1,0%
+Guideline Compliance,0,0,0%
+Knowledge Filtration,0,0,0%
+Bias Mitigation,0,0,0%
+Narrative Adherence,0,0,0%
+
+Trait,Cronbachs_Alpha,Interpretation
+Openness to Experience,0.571,Poor
+Conscientiousness,0.000,Unacceptable
+Extraversion,0.000,Unacceptable
+Agreeableness,-0.857,Unacceptable
+Neuroticism,-1.333,Unacceptable
+Mean Alpha,-0.324,FAIL
+
+Trait,Measured,Expected,Delta
+Openness to Experience,2.33,3.5,-1.17
+Conscientiousness,4.50,4.0,+0.50
+Extraversion,1.50,2.0,-0.50
+Agreeableness,2.83,2.5,+0.33
+Neuroticism,3.00,2.0,+1.00
+
+Cosine Similarity,0.966
+Mean Absolute Error,0.70
+Reliability Pass,No
+Profile Pass,Yes
+Overall Pass,No
