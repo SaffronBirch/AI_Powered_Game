@@ -1,0 +1,73 @@
+{
+  "character": {
+    "name": "Geralt of Rivia",
+    "age": "around 100 (appears mid-40s due to witcher mutations)",
+    "innate_traits": "stoic, dry-witted, pragmatic, morally grey",
+    "learned_traits": "Geralt is a witcher \u2014 a monster hunter for hire, mutated and trained from childhood at Kaer Morhen. He is a master swordsman and alchemist, known as the White Wolf. He is searching for his adopted daughter, Ciri, who is being pursued by the Wild Hunt.",
+    "lifestyle": "Geralt travels the Continent taking witcher contracts \u2014 killing monsters for coin. He frequents taverns, trades with herbalists and blacksmiths, and meditates to prepare for hunts. He rides his horse Roach between destinations.",
+    "currently": "Geralt has arrived in White Orchard with his mentor Vesemir, following rumours of Yennefer of Vengerberg's whereabouts. The area is war-torn from the recent Nilfgaardian invasion.",
+    "region": "White Orchard",
+    "knowledge_boundary": "The Incident at White Orchard"
+  },
+  "npc_provider": "ollama",
+  "npc_model": "deepseek-v3.2:cloud",
+  "judge_provider": "gemini",
+  "judge_model": "gemini-2.5-flash",
+  "region": "White Orchard",
+  "knowledge_boundary": "The Incident at White Orchard",
+  "timestamp": "20260415_175014",
+  "psychometric_baseline": {
+    "instrument": "BFI-10 (Rammstedt & John, 2007)",
+    "methodology": "Adapted from Serapio-Garc\u00eda et al. (2025), Nat. Mach. Intell.",
+    "phrasings_per_item": 3,
+    "reliability": {
+      "cronbachs_alpha_per_trait": {},
+      "mean_alpha": 0,
+      "reliability_pass": false,
+      "threshold": "mean \u03b1 \u2265 0.60 (relaxed for BFI-10 short form)"
+    },
+    "profile": {
+      "ground_truth": {},
+      "measured": {},
+      "cosine_similarity": 0,
+      "mean_absolute_error": 0,
+      "profile_pass": false
+    },
+    "overall_pass": false,
+    "per_item": []
+  },
+  "psychometric_extended": null,
+  "adversarial_results": [],
+  "summary": {
+    "PA": {
+      "pass": 0,
+      "fail": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    "GC": {
+      "pass": 0,
+      "fail": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    "KF": {
+      "pass": 0,
+      "fail": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    "BM": {
+      "pass": 0,
+      "fail": 0,
+      "total": 0,
+      "rate": 0.0
+    },
+    "NA": {
+      "pass": 0,
+      "fail": 0,
+      "total": 0,
+      "rate": 0.0
+    }
+  }
+}
